@@ -60,7 +60,10 @@
     grid-template-columns: repeat(4, 5rem);
     grid-template-rows: repeat(3, 7rem);
     width: 400px;
-    height: 1600px;
+    height: 100%;
+  }
+    .container{
+    height: 100%;
   }
 }
 .card {
