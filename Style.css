@@ -12,7 +12,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: 600px;
+  grid-template-rows: 620px;
   grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas:
     "nav main aside"
@@ -69,6 +69,8 @@
 .card {
   position: relative;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transition: transform 1s;
   cursor: pointer;
 }
@@ -82,11 +84,14 @@
 }
 .back {
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .toggle {
   transform: rotateY(180deg);
+   -webkit-transform: rotateY(180deg);
 }
 div .restart {
   margin-top: 13px;
