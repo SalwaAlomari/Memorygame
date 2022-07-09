@@ -52,6 +52,7 @@ const startGame = (array) => {
     back.classList = "back";
     front.src = item.src;
     card.setAttribute("name", item.name);
+    card.setAttribute("alt", item.name);
     section.appendChild(card);
     card.appendChild(front);
     card.appendChild(back);
