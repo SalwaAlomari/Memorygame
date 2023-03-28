@@ -8,6 +8,8 @@
   margin: 0;
   font-family: "Kdam Thmor Pro", sans-serif;
   color: rgb(82, 82, 82);
+   user-select: none;
+  -webkit-user-select: none;
 }
 
 .container {
