@@ -69,9 +69,12 @@
 .card {
   position: relative;
   transform-style: preserve-3d;
+  -webkit-transition-property: all;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
   cursor: pointer;
 }
 .front,
@@ -91,7 +94,8 @@
 }
 .toggle {
   transform: rotateY(180deg);
-   -webkit-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 div .restart {
   margin-top: 13px;
