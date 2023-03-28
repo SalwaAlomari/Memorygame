@@ -70,13 +70,13 @@
 }
 .card {
   position: relative;
-  transform-style: preserve-3d;
   -webkit-transition-property: all;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  transition: transform 1s;
+  transform-style: preserve-3d;
   -webkit-transition: transform 1s;
   -moz-transition: transform 1s;
+  transition: transform 1s;
   cursor: pointer;
 }
 .front,
@@ -88,6 +88,7 @@
   pointer-events: none;
 }
 .back {
+   -webkit-transition-property: all;
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -95,6 +96,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .toggle {
+   -webkit-transition-property: all;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
